@@ -1,7 +1,11 @@
-$Roboto: "Roboto", Arial, Helvetica, sans-serif;
+$Montserrat: "Montserrat", Arial, Helvetica, sans-serif;
+$Playfair: "Playfair Display", Arial, Helvetica, sans-serif;
+$fz-14: 14px;
 $fz-16: 16px;
+$fz-18: 18px;
 $white: #ffffff;
 $black: #000000;
+$red-100: #da8672;
 
 html, body, h1, h2, h3, h4, h5, h6, p, button, ul, ol {
   margin: 0;
@@ -16,8 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: $fz-16;
+  font-family: $Montserrat;
+  font-size: $fz-18;
   font-weight: 400;
   font-style: normal;
   line-height: 1.375;
@@ -32,6 +36,7 @@ svg {
 }
 
 a {
+  display: inline-block;
   color: $black;
   text-decoration: none;
   &:hover,
@@ -55,6 +60,7 @@ button {
 
 input {
   box-sizing: border-box;
+  width: 100%;
   border: none;
   outline: none;
   &:focus {
@@ -87,7 +93,32 @@ main {
 @media (min-width: 1000px) {
 
   .container {
-    max-width: 1170px;
+    padding: 0 150px;
+  }
+
+}
+
+@media (min-width: 2500px) {
+
+  /*.container {
+    max-width: 1600px;
+    padding: 0 15px;
+  }*/
+
+}
+
+@media (max-width: 1900px) {
+
+  .container {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 1900px) {
+
+  .container {
+    padding: 0 20px;
   }
 
 }

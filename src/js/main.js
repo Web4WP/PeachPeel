@@ -1,6 +1,17 @@
 'use strict'
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+  window.addEventListener("scroll", function() {
+    if( window.scrollY > 50 ) {
+      document.querySelector('.header').classList.add('scroll');
+      document.querySelector('.header__nav-logo').classList.add('fixed');
+    } else {
+      document.querySelector('.header').classList.remove('scroll');
+      document.querySelector('.header__nav-logo').classList.remove('fixed');
+    }
+  });
+
 
   /* Owl Carousel */
   /*$('.slider__owl').owlCarousel({
@@ -28,4 +39,6 @@ $(document).ready(function() {
     $(".slider__owl").trigger("prev.owl.carousel");
   });*/
 
-});
+})
+
+
