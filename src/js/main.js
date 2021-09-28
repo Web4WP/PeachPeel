@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if( window.scrollY > 50 ) {
       document.querySelector('.header').classList.add('scroll');
       document.querySelector('.header__nav-logo').classList.add('fixed');
+      document.querySelector('.header__nav-logo.fixed img').addEventListener('mouseover', function () {
+        document.querySelectorAll('.header__nav ul li').forEach(function (e) {
+          e.classList.add('visible');
+          document.querySelector('.header').classList.remove('scroll');
+        });
+      })
+      document.querySelector('.header').addEventListener('mouseout', function () {
+        document.querySelectorAll('.header__nav ul li').forEach(function (e) {
+          e.classList.remove('visible');
+          document.querySelector('.header').classList.add('scroll');
+        });
+      })
     } else {
       document.querySelector('.header').classList.remove('scroll');
       document.querySelector('.header__nav-logo').classList.remove('fixed');

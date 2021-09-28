@@ -9,6 +9,38 @@
   z-index: 100;
 }
 
+.header.scroll {
+  border-bottom: none;
+  background: transparent;
+  backdrop-filter: blur(0);
+  .header__nav {
+    ul {
+      li {
+        transition: opacity 0.3s;
+      }
+      li:not(.header__nav-logo) {
+        opacity: 0;
+        a {
+
+        }
+      }
+      li.header__nav-logo {
+        border-left: none;
+        border-right: none;
+        a {
+
+          img {
+
+          }
+        }
+      }
+      li.visible {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 .header__wrap {
 
 }

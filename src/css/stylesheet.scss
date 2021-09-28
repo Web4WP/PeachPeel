@@ -4,6 +4,8 @@
 @import "lib/bootstrap/mixins";
 @import "lib/bootstrap/utilities";
 @import "lib/bootstrap/modal";
+@import "lib/bootstrap/accordion";
+@import "lib/bootstrap/transitions";
 
 /* Common */
 @import "common/fonts";
@@ -15,3 +17,4 @@
 /* Главная */
 @import "includes/index/hero";
 @import "includes/index/why";
+@import "includes/index/see";
