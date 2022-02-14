@@ -1,0 +1,41 @@
+.say {
+  margin-bottom: 186px;
+}
+
+.say__title {
+  margin-bottom: 57px;
+  padding-right: 100px;
+  font-family: $Playfair;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.22;
+  text-align: center;
+}
+
+
+@media (max-width: 1279px) {
+
+  .say {
+    margin-bottom: 100px;
+  }
+
+  .say__title {
+    padding-right: 0;
+    font-size: 26px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .say {
+    margin-bottom: 9px;
+  }
+
+  .say__title {
+    padding-right: 0;
+    font-size: 26px;
+  }
+
+}

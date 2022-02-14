@@ -5,7 +5,7 @@ section.see
         div.see__review-wrap
           div.see__review-text Вот вам яркий пример современных тенденций - граница обучения кадров позволяет оценить значение форм воздействия.
           div.see__review-name Алена Саромыцкая
-          a.see__review-link(href="#") Смотреть видеоотзыв
+          a.see__review-link(href="#" data-bs-toggle="modal", data-bs-target="#exampleModal2") Смотреть видеоотзыв
         img.see__review-img(src="img/content/see.png", alt="")
       div.see__col-right
         h2.see__title Посмотрите сами!
@@ -16,4 +16,24 @@ section.see
               button.see__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#see-content-one", aria-expanded="false", aria-controls="see-content-one") Бизнес-экспертиза
             div#see-content-one.see__accordion-collapse.accordion-collapse.collapse(aria-labelledby="see-accordion-one", data-bs-parent="#see-accordion")
               div.see__accordion-body.accordion-body
-                p.see__accordion-text 1) <strong>Восстанавливает</strong> экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+                p.see__accordion-text Более 12 лет мы посвящаем свою деятельность красоте
+          div.see__accordion-item.accordion-item
+            div#see-accordion-two.see__accordion-header.accordion-header
+              button.see__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#see-content-two", aria-expanded="false", aria-controls="see-content-two") Гарантии
+            div#see-content-two.see__accordion-collapse.accordion-collapse.collapse(aria-labelledby="see-accordion-two", data-bs-parent="#see-accordion")
+              div.see__accordion-body.accordion-body
+                p.see__accordion-text Более 12 лет мы посвящаем свою деятельность красоте
+          div.see__accordion-item.accordion-item
+            div#see-accordion-three.see__accordion-header.accordion-header
+              button.see__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#see-content-three", aria-expanded="false", aria-controls="see-content-three") Поддержка
+            div#see-content-three.see__accordion-collapse.accordion-collapse.collapse(aria-labelledby="see-accordion-three", data-bs-parent="#see-accordion")
+              div.see__accordion-body.accordion-body
+                p.see__accordion-text Более 12 лет мы посвящаем свою деятельность красоте
+          div.see__accordion-item.accordion-item
+            div#see-accordion-four.see__accordion-header.accordion-header
+              button.see__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#see-content-four", aria-expanded="false", aria-controls="see-content-four") Доказательная медицина
+            div#see-content-four.see__accordion-collapse.accordion-collapse.collapse(aria-labelledby="see-accordion-four", data-bs-parent="#see-accordion")
+              div.see__accordion-body.accordion-body
+                p.see__accordion-text Более 12 лет мы посвящаем свою деятельность красоте
+          div.see__more
+            button.see__more-btn.btn(data-bs-toggle="modal", data-bs-target="#exampleModal") Начать сотрудничество

@@ -1,0 +1,30 @@
+section.request
+  div.container
+    div.request__wrap
+      div.request__col-left
+        h2.request__title Know how:
+        div.request__description Peach Peel соответствует любым запросам пациентов
+        img.request__photo-img-mob(src="img/content/request.png", alt="Выбор")
+        div#request-accordion.request__accordion.accordion.accordion-flush
+          div.request__accordion-item.accordion-item
+            div#request-accordion-one.request__accordion-header.accordion-header
+              button.request__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#request-content-one", aria-expanded="false", aria-controls="request-content-one") Экспресс-процедура
+            div#request-content-one.request__accordion-collapse.accordion-collapse.collapse(aria-labelledby="request-accordion-one", data-bs-parent="#request-accordion")
+              div.request__accordion-body.accordion-body
+                p.request__accordion-text Восстанавливает экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+          div.request__accordion-item.accordion-item
+            div#request-accordion-two.request__accordion-header.accordion-header
+              button.request__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#request-content-two", aria-expanded="false", aria-controls="request-content-two") Синергия методов
+            div#request-content-two.request__accordion-collapse.accordion-collapse.collapse(aria-labelledby="request-accordion-two", data-bs-parent="#request-accordion")
+              div.request__accordion-body.accordion-body
+                p.request__accordion-text Восстанавливает экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+          div.request__accordion-item.accordion-item
+            div#request-accordion-three.request__accordion-header.accordion-header
+              button.request__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#request-content-three", aria-expanded="false", aria-controls="request-content-three") Максимум выручки за 1 визит
+            div#request-content-three.request__accordion-collapse.accordion-collapse.collapse(aria-labelledby="request-accordion-three", data-bs-parent="#request-accordion")
+              div.request__accordion-body.accordion-body
+                p.request__accordion-text Восстанавливает экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+        div.request__more
+          button.request__more-btn.btn Записаться на семинар
+      div.request__photo
+        img.request__photo-img(src="img/content/request.png", alt="Выбор")

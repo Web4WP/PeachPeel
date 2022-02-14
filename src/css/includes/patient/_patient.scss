@@ -1,0 +1,164 @@
+.patient-main {
+  .old {
+    margin-bottom: 300px;
+  }
+}
+
+.patient {
+  position: relative;
+  margin-bottom: 214px;
+  .container {
+    padding-left: 0;
+  }
+}
+
+.patient__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.patient__photo {
+  position: relative;
+  left: -8px;
+  width: 57.6%;
+  padding-top: 45px;
+}
+
+.patient__description {
+  width: 33.5%;
+  padding-top: 386px;
+}
+
+.patient__title {
+  margin-bottom: 52px;
+  font-family: $Playfair;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.patient__text {
+  max-width: 565px;
+  margin-bottom: 129px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  span {
+    font-weight: 200;
+  }
+}
+
+.patient__more {
+  padding-top: 2px;
+  padding-left: 9px;
+}
+
+@media (max-width: 1900px) {
+
+  .patient__photo {
+    width: 63%;
+  }
+
+  .patient__description {
+    width: 30%;
+    padding-top: 250px;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .patient-main {
+    .old {
+      margin-bottom: 150px;
+    }
+  }
+
+  .patient {
+    margin-bottom: 80px;
+  }
+
+  .patient__wrap {
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .patient__photo {
+    width: 58%;
+  }
+
+  .patient__description {
+    width: 37%;
+    padding-top: 150px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .patient-main {
+    .old {
+      margin-bottom: 66px;
+    }
+  }
+
+  .patient {
+    margin-bottom: 84px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .patient__wrap {
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
+
+  .patient__photo {
+    position: relative;
+    width: 95.6%;
+    padding-top: 0;
+  }
+
+  .patient__description {
+    width: auto;
+    margin-bottom: 31px;
+    padding-top: 61px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .patient__title {
+    margin-bottom: 21px;
+    font-size: 32px;
+  }
+
+  .patient__text {
+    margin-bottom: 39px;
+    font-size: 14px;
+  }
+
+  .patient__more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 41px;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 33px;
+    &::before {
+      display: none;
+    }
+    &:hover, &:focus {
+      width: 174px;
+    }
+  }
+
+  .patient__animation {
+    font-size: 45px;
+  }
+
+}

@@ -1,0 +1,170 @@
+.protocol {
+  margin-bottom: 150px;
+  .container {
+    padding-left: 78px;
+  }
+}
+
+.protocol__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.protocol__col-left {
+  width: 50%;
+  padding-top: 45px;
+}
+
+.protocol__col-right {
+  width: 49.2%;
+}
+
+.protocol__img {
+
+}
+
+.protocol__img-mob {
+  display: none;
+}
+
+.protocol__title {
+  margin-bottom: 21px;
+  font-family: $Playfair;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.22;
+}
+
+.protocol__description {
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+.protocol__list {
+  margin-bottom: 90px;
+  padding-left: 0;
+  /*list-style-type: decimal;*/
+  counter-reset: myCounter;
+  list-style: none;
+}
+
+.protocol__item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  strong {
+    font-weight: 600;
+  }
+  &::before {
+    content: counter( myCounter ) ') ';
+    counter-increment: myCounter;
+    margin-right: 15px;
+    color: #545454;
+  }
+}
+
+.protocol__list-close {
+  margin-left: 24px;
+}
+
+.protocol__list-close-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  list-style-image: url("../img/svg/list-close.svg");
+}
+
+@media (max-width: 1900px) {
+
+  .protocol {
+    .container {
+      padding: 0 50px;
+    }
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+
+
+  .protocol {
+    margin-bottom: 85px;
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  .protocol__title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .protocol__description {
+    margin-bottom: 44px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .protocol__img {
+    display: none;
+  }
+
+  .protocol__img-mob {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .protocol__wrap {
+    flex-direction: column;
+  }
+
+  .protocol__col-left {
+    width: auto;
+  }
+
+  .protocol__col-right {
+    width: auto;
+  }
+
+  .protocol__item {
+    font-size: 14px;
+  }
+
+  .protocol__list {
+    margin-bottom: 36px;
+    padding-left: 43px;
+  }
+
+  .protocol__list-close-item {
+    font-size: 14px;
+  }
+
+  .protocol__list-close {
+    margin-left: 37px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .protocol__list {
+    padding-left: 0;
+  }
+
+  .protocol__list-close {
+    margin-left: 20px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}

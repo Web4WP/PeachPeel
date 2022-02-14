@@ -13,8 +13,44 @@
 @import "common/header";
 @import "common/footer";
 
+/* Reuse */
+@import "reuse/cta";
+@import "reuse/comment";
+@import "reuse/old";
+@import "reuse/modal";
+@import "reuse/modal-video";
 
 /* Главная */
 @import "includes/index/hero";
 @import "includes/index/why";
 @import "includes/index/see";
+@import "includes/index/innovation";
+@import "includes/index/news";
+
+/* Теория и формулы */
+@import "includes/formula/formula-banner";
+@import "includes/formula/how";
+@import "includes/formula/key";
+@import "includes/formula/say";
+
+/* Практика */
+@import "includes/practice/practice-banner";
+@import "includes/practice/request";
+@import "includes/practice/solution";
+@import "includes/practice/protocol";
+
+/* Контакты */
+@import "includes/contact/contact";
+
+/* Для пациентов */
+@import "includes/patient/patient";
+@import "includes/patient/choice";
+@import "includes/patient/century";
+@import "includes/patient/procedure";
+@import "includes/patient/faq";
+
+/* Календарь */
+@import "includes/calendar/calendar";
+
+/* Информационная страница */
+@import "includes/info/info";

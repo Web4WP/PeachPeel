@@ -1,0 +1,387 @@
+.callback {
+
+}
+
+.callback__dialog {
+  max-width: 1620px;
+}
+
+.callback__content {
+  border-radius: 40px;
+}
+
+.callback__close {
+  position: absolute;
+  top: 48px;
+  right: 49px;
+  width: 27px;
+  height: 27px;
+  background: url("../img/svg/modal-close.svg") center center no-repeat;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.callback__wrap {
+  padding: 57px 12px 54px 82px;
+}
+
+.callback__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.callback__col-left {
+  width: 48%;
+}
+
+.callback__title {
+  margin-bottom: 25px;
+  font-family: $Playfair;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.callback__description {
+  max-width: 90%;
+  margin: 0 auto 40px;
+  font-weight: 300;
+  color: #4d4d4d;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.callback__form {
+  padding-left: 35px;
+}
+
+.callback__form-bid {
+  max-width: 95%;
+  overflow-x: hidden;
+  input, textarea {
+    font-size: 14px;
+  }
+  .contact__form-bid-item {
+    margin-top: 20px;
+  }
+}
+
+.callback__form-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #a3a3a3;
+  letter-spacing: 0.07em;
+  line-height: 1;
+}
+
+.callback__logo {
+  display: none;
+}
+
+.callback__form-input {
+  margin-bottom: 39px;
+  padding: 5px 0 11px;
+  font-size: 14px;
+  color: #333333;
+  font-family: $Montserrat;
+  background: transparent;
+  border-bottom: 1px solid #b2b2b2;
+  &:focus {
+    border-bottom: 1px solid $red-100;
+  }
+}
+
+.callback__form-textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 70px;
+  padding: 5px 5px 14px;
+  font-family: $Montserrat;
+  font-size: 14px;
+  color: #333333;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #b2b2b2;
+
+  &:focus {
+    outline: none;
+    /*outline-color: $red-100;*/
+  }
+}
+
+.callback__form-privacy {
+  margin-bottom: 39px;
+  text-align: center;
+}
+
+.callback__form-privacy-check {
+  display: none;
+}
+
+.callback__form-privacy-label {
+  position: relative;
+  padding-left: 39px;
+  font-size: 16px;
+  color: #4d4d4d;
+  letter-spacing: 0.03em;
+  text-align: center;
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: $red-100;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    transform: translateY(-50%);
+    border: 1px solid $red-100;
+    border-radius: 50%;
+  }
+}
+
+.callback__form-privacy-check:checked + .callback__form-privacy-label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    transform: translateY(-50%);
+    border: 1px solid $red-100;
+    background: $red-100;
+    border-radius: 50%;
+  }
+}
+
+.callback__form-send {
+  text-align: center;
+}
+
+.callback__form-send-btn {
+  width: 247px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.callback__col-right {
+  width: 45%;
+  text-align: center;
+}
+
+.callback__img {
+
+}
+
+.callback_done {
+
+  p {
+    margin-bottom: 15px;
+    letter-spacing: 0.03em;
+    color: #4d4d4d;
+  }
+}
+
+.callback__wrap_done {
+  height: 640px;
+  padding: 55px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callback__done-title {
+  margin-bottom: 70px;
+  font-family: $Playfair;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.callback__done-center {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.callback__done-apply {
+  width: 247px;
+  &:hover {
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1900px) {
+
+  .callback__wrap {
+    padding: 40px 20px;
+  }
+
+  .callback__title {
+    font-size: 55px;
+  }
+
+  .callback__content {
+    margin: 0 50px;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .callback {
+    /*top: 49px;*/
+  }
+
+  .callback__content {
+    margin: 0;
+  }
+
+  .callback__row {
+    justify-content: center;
+  }
+
+  .callback__logo {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 158px;
+  }
+
+  .callback__close {
+    width: 17px;
+    height: 17px;
+    top: 17px;
+    right: 19px;
+    background: url("../img/svg/close.svg") center center no-repeat;
+  }
+
+  .callback__dialog {
+    margin: 0;
+  }
+
+  .callback__content {
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+  }
+
+  .callback__wrap {
+    padding: 96px 10px 10px 10px;
+  }
+
+  .callback__col-left {
+    width: auto;
+  }
+
+  .callback__col-right {
+    display: none;
+  }
+
+  .callback__title {
+    margin-bottom: 22px;
+    font-size: 32px;
+  }
+
+  .callback__description {
+    margin: 0 auto 36px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .callback__form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .callback__form-label {
+    letter-spacing: 0.03em;
+  }
+
+  .callback__form-input {
+    margin-bottom: 23px;
+    padding: 5px 0 8px;
+  }
+
+  .callback__form-privacy {
+    margin-bottom: 29px;
+  }
+
+  .callback__form-send-btn {
+    width: 187px;
+  }
+
+  .callback__form-privacy-label {
+    padding-left: 20px;
+    font-size: 14px;
+    a {
+      font-size: 14px;
+    }
+    &::before {
+      top: 9px;
+      left: -1px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .callback__form-privacy-check:checked + .callback__form-privacy-label::before {
+    top: 9px;
+    left: -1px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .callback__form-textarea {
+    margin-bottom: 35px;
+    padding: 5px 5px 51px;
+  }
+
+  .callback_done {
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .callback__wrap_done {
+    height: auto;
+    justify-content: flex-start;
+    padding: 96px 20px 10px 20px;
+  }
+
+  .callback__done-title {
+    margin-bottom: 22px;
+    font-size: 27px;
+  }
+
+  .callback__done-center {
+    margin-top: 25px;
+  }
+
+
+}
+
+@media (max-width: 1023px) {
+
+
+
+}

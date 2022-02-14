@@ -1,0 +1,251 @@
+extends ../common/layout-calendar
+
+block main
+  main
+    section.calendar
+      div.container
+        h1.calendar__title Расписание наших мероприятий
+        div.calendar__filter
+          div.calendar__select
+            select#way(name="way")
+              option Выберите направление
+              option Направление 2
+          div.calendar__select
+            select#city(name="city")
+              option Выберите город
+              option Воронеж
+          div.calendar__select
+            select#person(name="person")
+              option Выберите куратора
+              option Иван Смирнов
+          div.calendar__buttons
+            button.calendar__buttons-apply.btn Применить
+            button.calendar__buttons-reset Очистить
+      div.calendar__month
+        button.calendar__month-prev
+        div.calendar__month-text Сентябрь 2021
+        button.calendar__month-next
+      div.container
+        div.calendar__wrap
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 30 августа
+              span ПН
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 31 августа
+              span ВТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 1 сентября
+              span СР
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 2 сентября
+              span ЧТ
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 3 сентября
+              span ПТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 4 сентября
+              span СБ
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+          div.calendar__day
+            div.calendar__day-wrap
+              span 31 августа
+              span ВТ
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 30 августа
+              span ПН
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 31 августа
+              span ВТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 1 сентября
+              span СР
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 2 сентября
+              span ЧТ
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 3 сентября
+              span ПТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 4 сентября
+              span СБ
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 30 августа
+              span ПН
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 31 августа
+              span ВТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 1 сентября
+              span СР
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 2 сентября
+              span ЧТ
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 3 сентября
+              span ПТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 4 сентября
+              span СБ
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 30 августа
+              span ПН
+          div.calendar__day
+            div.calendar__day-wrap.calendar__day-wrap_old
+              span 31 августа
+              span ВТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 1 сентября
+              span СР
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 2 сентября
+              span ЧТ
+            div.calendar__day-item.calendar__day-item_orange
+              div.calendar__day-item-title Конференция
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 3 сентября
+              span ПТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Семинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 4 сентября
+              span СБ
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+          div.calendar__day
+            div.calendar__day-wrap
+              span 30 августа
+              span ПН
+          div.calendar__day
+            div.calendar__day-wrap
+              span 31 августа
+              span ВТ
+            div.calendar__day-item.calendar__day-item_red
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 5 сентября
+              span ВС
+          div.calendar__day
+            div.calendar__day-wrap
+              span 30 августа
+              span ПН
+            div.calendar__day-item.calendar__day-item_green
+              div.calendar__day-item-title Вебинар
+              div.calendar__day-item-text Название темы проводимого вебинара в данную дату
+          div.calendar__day
+            div.calendar__day-wrap
+              span 31 августа
+              span ВТ

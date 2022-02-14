@@ -1,0 +1,270 @@
+.request {
+  margin-bottom: 236px;
+  .container {
+    padding: 0 143px;
+  }
+}
+
+.request__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request__col-left {
+  width: 48%;
+}
+
+.request__title {
+  margin-bottom: 31px;
+  font-family: $Playfair;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.22;
+}
+
+.request__description {
+  max-width: 650px;
+  margin-bottom: 54px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.request__accordion {
+  max-width: 96.2%;
+  margin-bottom: 70px;
+  .request__accordion-item {
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 1px solid rgba(0,0,0,0.125);
+    }
+  }
+}
+
+.request__accordion-item {
+  margin-bottom: 20px;
+}
+
+.request__accordion-header {
+
+}
+
+.request__accordion-btn {
+  padding: 17px 0 18px;
+  font-family: $Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  color: #545454;
+  letter-spacing: 0.03em;
+  &::after {
+    width: 12px;
+    height: 12px;
+    margin-left: 21px;
+    background: url("../img/svg/plus.svg") left top no-repeat;
+    background-size: cover;
+    transition: none;
+  }
+  &:hover,
+  &:focus {
+    color: $red-100;
+  }
+  &:focus {
+    border-color: $red-100;
+    box-shadow: none;
+  }
+}
+
+.request__accordion-btn.accordion-button:not(.collapsed) {
+  font-weight: 700;
+  color: $red-100;
+  background: transparent;
+}
+
+.request__accordion-btn.accordion-button:not(.collapsed)::after {
+  background: url("../img/svg/minus.svg") center center no-repeat;
+}
+
+.request__accordion-collapse {
+
+}
+
+.request__accordion-body {
+  padding: 13px 40px 21px 0;
+}
+
+.request__accordion-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3d3d3d;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  strong {
+    font-weight: 500;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.request__more {
+
+}
+
+.request__more-btn {
+
+}
+
+.request__photo {
+  position: relative;
+  width: 48.5%;
+  margin-top: 33px;
+  text-align: center;
+}
+
+.request__photo-img-mob {
+  display: none;
+}
+
+.request__photo-img {
+  padding-left: 44px;
+}
+
+.request__photo-text {
+  position: absolute;
+  top: -107px;
+  right: -2px;
+  animation: rotate 25s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 1900px) {
+
+  .request {
+    margin-bottom: 150px;
+    .container {
+      padding: 0 50px;
+    }
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .request {
+    margin-bottom: 90px;
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  .request__description {
+    max-width: 100%;
+    margin-bottom: 39px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .request__wrap {
+    flex-direction: column;
+  }
+
+  .request__col-left {
+    width: auto;
+  }
+
+  .request__photo {
+    display: none;
+  }
+
+  .request__photo-img-mob {
+    display: block;
+    margin: 0 auto 26px;
+  }
+
+  .request__title {
+    margin-bottom: 22px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .request__accordion {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .request__accordion-body {
+    padding: 13px 0 21px 0;
+  }
+
+  .request__accordion-item {
+    margin-bottom: 16px;
+  }
+
+  .request__accordion-btn {
+    padding: 15px 20px 13px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 3px;
+      width: 10px;
+      height: 10px;
+      background-position: right top;
+    }
+  }
+
+  .request__links {
+    margin-bottom: 35px;
+    padding-left: 1px;
+    justify-content: center;
+  }
+
+  .request__links-item {
+    margin-right: 6px;
+    margin-bottom: 13px;
+    padding: 8px 10px 8px;
+    font-size: 12px;
+  }
+
+  .request__more {
+    text-align: center;
+  }
+
+  .request__accordion-text {
+    font-size: 14px;
+  }
+
+
+}
+
+@media (max-width: 1023px) {
+
+
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}
+
+
+@media (min-width: 2500px) {
+
+  .request__photo {
+    text-align: center;
+  }
+
+}

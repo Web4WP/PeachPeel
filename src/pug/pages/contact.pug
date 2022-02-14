@@ -1,0 +1,48 @@
+extends ../common/layout
+
+block main
+  main
+    section.contact
+      div.container
+        div.contact__row
+          div.contact__col-left
+            h1.contact__title Свяжитесь с нами
+            div.contact__text Свяжитесь с нами или оставьте заявку и мы скоро ответим Вам
+            div.contact__wrap
+              div.contact__item.contact__item_address
+                div.contact__item-title Адрес
+                address.contact__item-text Город Москва, улица Большая Садовая, дом 5, корпус 1, помещение №1111
+              div.contact__item-row
+                div.contact__item.contact__item_mail
+                  div.contact__item-title Почта
+                  a.contact__item-text(href="mailto:info@peachpeel.ru") info@peachpeel.ru
+                div.contact__item.contact__item_phone
+                  div.contact__item-title Телефон
+                  a.contact__item-text(href="tel:+74952600768") 8 (495) 260-07-68
+                div.contact__item.contact__item_insta
+                  div.contact__item-title Instagram
+                  a.contact__item-text(href="https://www.instagram.com/peachpeel.ru/", target="_blank") @peachpeel.ru
+            div.contact__images-mob
+              img.contact__img-mob(src="img/svg/contact.svg", alt="")
+            div.contact__form
+              h3.contact__form-title Оставьте заявку
+              form.contact__form-bid(action="/", method="post")
+                div.contact__form-bid-item
+                  input#userNameForm.contact__form-input(name="userNameForm")
+                  label.contact__form-label(for="userNameForm") Ваше имя
+                div.contact__form-bid-item
+                  input#userPhoneForm.contact__form-input(name="userPhoneForm")
+                  label.contact__form-label(for="userPhoneForm") Ваш телефон
+                div.contact__form-bid-item
+                  input#userMailForm.contact__form-input(name="userMailForm")
+                  label.contact__form-label(for="userMailForm") Ваша почта
+                div.contact__form-bid-item.contact__form-bid-item_msg
+                  textarea#userMsgForm.contact__form-textarea.contact__form-input
+                  label.contact__form-label(for="userMsgForm") Оставьте сообщение
+                div.contact__form-privacy
+                  input#privacyForm.contact__form-privacy-check(type="checkbox")
+                  label.contact__form-privacy-label(for="privacyForm") Я ознакомлен(а) с <a href="privacy.html">политикой конфиденциальности</a>
+                div.contact__form-send
+                  input.contact__form-send-btn.btn(type="submit", value="Оставить заявку")
+          div.contact__col-right
+            img.contact__col-right-img(src="img/svg/contact.svg", alt="")

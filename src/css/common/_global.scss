@@ -16,6 +16,10 @@ ul, ol {
   list-style: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -27,6 +31,15 @@ body {
   line-height: 1.375;
   color: $black;
   background: $white;
+  overflow-x: hidden;
+}
+
+body.modal-open {
+  height: 100vh;
+}
+
+main.open {
+  display: none;
 }
 
 svg {
@@ -87,7 +100,7 @@ main {
 
 .container {
   max-width: 100%;
-  padding: 0 15px;
+  padding: 0 142px;
   margin: 0 auto;
 }
 
@@ -105,29 +118,46 @@ main {
   transition: 0.2s ease-in-out;
   -webkit-appearance: none;
   &:hover, &:focus {
-    /*color: $red-100;
-    background: $white;
-    border-color: $red-100;*/
     box-shadow: inset 0 4px 4px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0 4px 10px #F3A988);
   }
 }
 
-@media (min-width: 1000px) {
-
-  .container {
-    padding: 0 150px;
+.btn-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 158px;
+  height: 158px;
+  margin-left: 5px;
+  padding-left: 16px;
+  font-family: $Montserrat;
+  font-size: 14px;
+  color: #3d3d3d;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  border: 1px solid #3d3d3d;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  &::before {
+    content: url("../img/svg/more-arrow.svg");
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
   }
-
-}
-
-@media (min-width: 2500px) {
-
-  /*.container {
-    max-width: 1600px;
-    padding: 0 15px;
-  }*/
-
+  &:hover {
+    width: 158px;
+    padding-left: 0;
+    background: $red-100;
+    color: $white;
+    border-color: transparent;
+    &::before {
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
 
 @media (max-width: 1900px) {
@@ -138,10 +168,53 @@ main {
 
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1279px) {
 
   .container {
     padding: 0 20px;
+  }
+
+  .btn {
+    padding: 12px 28px 11px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .btn-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 174px;
+    height: 39px;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 33px;
+    &::before {
+      display: none;
+    }
+    &:hover, &:focus {
+      width: 174px;
+    }
+  }
+
+}
+
+/*@media (min-width: 1000px) {
+
+  .container {
+    padding: 0 143px;
+  }
+
+}*/
+
+@media (min-width: 3000px) {
+
+  .container {
+    max-width: 2500px;
+    padding: 0 15px;
   }
 
 }

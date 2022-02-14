@@ -4,17 +4,39 @@ header.header
       nav.header__nav
         ul
           li.active
-            a(href="#") Главная
+            a(href="index.html") Главная
           li
-            a(href="#") Теория и формула
+            a(href="formula.html") Теория и формула
           li
-            a(href="#") Практика
+            a(href="practice.html") Практика
           li.header__nav-logo
-            a(href="#")
-              img(src="img/svg/logo.svg", alt="Peach Peel")
+            a(href="index.html")
+              img.header__mob-logo-img(src="img/svg/logo.svg", alt="Peach Peel")
           li
-            a(href="#") Для пациентов
+            a(href="patient.html") Для пациентов
           li
-            a(href="#") Календарь
+            a(href="calendar.html") Календарь
           li
-            a(href="#") Контакты
+            a(href="contact.html") Контакты
+  div.header__mob
+    a.header__mob-logo(href="#")
+      img.header__mob-logo-img(src="img/svg/logo.svg", alt= "Peach Peel")
+    button.header__mob-burger
+    div.header__mob-menu
+      img.header__mob-img(src="img/content/menu.png", alt="Peach Peel")
+      div.header__mob-nav
+        ul
+          li.active
+            a(href="index.html") Главная
+          li
+            a(href="formula.html") Теория и формула
+          li
+            a(href="practice.html") Практика
+          li
+            a(href="patient.html") Для пациентов
+          li
+            a(href="calendar.html") Календарь
+          li
+            a(href="contact.html") Контакты
+        div.header__mob-social
+          a.header__mob-social-link(href="#") @peachpeel.ru

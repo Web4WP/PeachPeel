@@ -21,7 +21,7 @@
       li:not(.header__nav-logo) {
         opacity: 0;
         a {
-
+          color: $black;
         }
       }
       li.header__nav-logo {
@@ -34,8 +34,27 @@
           }
         }
       }
-      li.visible {
-        opacity: 1;
+    }
+  }
+  &:hover {
+    background: $white;
+    border-bottom: 1px solid #7a7b7e;
+    .header__nav {
+      ul {
+        li:not(.header__nav-logo) {
+          opacity: 1;
+
+          a {
+            color: $black;
+            &:hover {
+              color: $red-100;
+            }
+          }
+        }
+        li.header__nav-logo {
+          border-right: 1px solid #7a7b7e;
+          border-left: 1px solid #7a7b7e;
+        }
       }
     }
   }
@@ -52,7 +71,8 @@
     align-items: center;
     justify-content: space-between;
     li {
-      margin-right: 10px;
+      position: relative;
+      top: 2px;
       a {
         font-size: $fz-14;
         font-weight: 500;
@@ -64,9 +84,25 @@
           color: $red-100;
         }
       }
-    }
-    &:last-child {
-      margin-right: 0;
+      &:nth-child(2) {
+        left: 24px;
+      }
+      &:nth-child(3) {
+        left: 49px;
+      }
+      &:nth-child(4) {
+        top: 0;
+        left: -2px;
+      }
+      &:nth-child(5) {
+        left: -54px;
+      }
+      &:nth-child(6) {
+        left: -25px;
+      }
+      &:last-child {
+        left: 1px;
+      }
     }
     li.active {
       a {
@@ -77,18 +113,38 @@
 }
 
 .header__nav-logo {
-  padding: 22px 70px 21px;
+  padding: 25px 70px 17px;
   border-right: 1px solid #7a7b7e;
   border-left: 1px solid #7a7b7e;
   a {
 
-    img {
+    img, svg {
       width: 212px;
+      height: 28px;
+    }
+    svg {
+      path {
+        mix-blend-mode: difference;
+      }
     }
   }
 }
 
+.header__mob {
+  display: none;
+}
+
 @media (max-width: 1900px) {
+
+  .header__nav {
+
+    ul {
+
+      li {
+        position: static;
+      }
+    }
+  }
 
   .header__nav-logo {
     padding: 22px 30px 21px;
@@ -96,15 +152,143 @@
 
 }
 
+@media (max-width: 1365px) {
+
+  .header__nav ul li a {
+    font-size: 12px;
+  }
+
+}
+
 @media (max-width: 1279px) {
+
+  .header {
+    position: static;
+  }
 
   .header__nav-logo {
     padding: 22px 20px 21px;
     a {
       img {
-        width: 150px;
+        width: auto;
       }
     }
   }
+
+}
+
+@media (max-width: 1023px) {
+
+  .header.open {
+    background: #F1D0C3;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+  }
+
+  .header.scroll {
+    background: $white;
+  }
+
+  .header__nav,
+  .header__mob-menu {
+    display: none;
+  }
+
+  .header__mob {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 9px 20px 8px;
+    font-size: 16px;
+  }
+
+  .header__mob-logo {
+    padding-top: 5px;
+  }
+
+  .header__mob-logo-img {
+    width: 158px;
+  }
+
+  .header__mob-burger {
+    width: 30px;
+    height: 30px;
+    background: url("../img/svg/burger.svg") center center no-repeat;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .header__mob-burger.open {
+    transform: rotate(90deg);
+    background: url("../img/svg/close.svg") center center no-repeat;
+  }
+
+  .header__mob-menu.open {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    display: block;
+    width: 100%;
+    background: #F1D0C3;
+  }
+
+  .header__mob-img {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header__mob-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 171px;
+    padding-top: 114px;
+    background: $white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 40px 0 0;
+    ul {
+      margin-bottom: 60px;
+      text-align: center;
+      li {
+        margin-bottom: 28px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 0.03em;
+        }
+      }
+      li.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .header__mob-social {
+    position: absolute;
+    bottom: 35%;
+  }
+
+  .header__mob-social-link {
+    padding-left: 42px;
+    background: url("../img/svg/instagram.svg") 2px center no-repeat;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
 
 }

@@ -1,0 +1,43 @@
+div#exampleModal.modal.fade.callback(tabindex="-1" aria-hidden="true")
+  div.callback__dialog.modal-dialog.modal-dialog-centered
+    div.callback__content.modal-content
+      img.callback__logo(src="img/svg/logo.svg", alt="")
+      button.callback__close.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+      div.callback__wrap.modal-body
+        div.callback__row
+          div.callback__col-left
+            div.callback__title Оставьте заявку
+            div.callback__description Оставьте заявку и наши менеджеры свяжутся с Вами в ближайшее время
+            div.callback__form
+              form.callback__form-bid(action="/", method="post")
+                div.contact__form-bid-item
+                  input#userNameForm.contact__form-input(name="userNameForm")
+                  label.contact__form-label(for="userNameForm") Ваше имя
+                div.contact__form-bid-item
+                  input#userPhoneForm.contact__form-input(name="userPhoneForm")
+                  label.contact__form-label(for="userPhoneForm") Ваш телефон
+                div.contact__form-bid-item
+                  input#userMailForm.contact__form-input(name="userMailForm")
+                  label.contact__form-label(for="userMailForm") Ваша почта
+                div.contact__form-bid-item.contact__form-bid-item_msg
+                  textarea#userMsgForm.contact__form-textarea.contact__form-input
+                  label.contact__form-label(for="userMsgForm") Оставьте сообщение
+                div.callback__form-privacy
+                  input#privacy.callback__form-privacy-check(type="checkbox" required)
+                  label.callback__form-privacy-label(for="privacy") Я ознакомлен(а) с <a href="#" type="button" data-bs-target="#exampleModalTwo" data-bs-toggle="modal">политикой обработки данных</a>
+                div.callback__form-send
+                  input.callback__form-send-btn.btn(type="submit", value="Оставить заявку")
+          div.callback__col-right
+            img.callback__img(src="img/content/modal.png", alt="")
+div#exampleModalTwo.modal.fade.callback.callback_done(tabindex="-1" aria-hidden="true")
+  div.callback__dialog.modal-dialog.modal-dialog-centered
+    div.callback__content.modal-content
+      img.callback__logo(src="img/svg/logo.svg", alt="")
+      div.callback__wrap.callback__wrap_done.modal-body
+        div.callback__done-title Согласие на обработку персональных данных
+        p Я настоящим (путем проставления галочки в соответствующей графе) даю в электронной форме согласие ООО «ЭльЭстетик» (ОГРН 1217700040293, Адрес: 123001, г. Москва, вн.тер.г. Муниципальный округ Пресненский, ул. Большая Садовая, д. 5, к. 1, этаж 9, помещение 1111), на обработку следующих персональных данных: имя, адрес электронной почты, номер телефона, в целях статистических исследований и мониторинга работы пользователей сайта, получения информационной рассылки, участия в конкурсных программах, обратной связи и пользования иными сервисами, предусмотренными сайтом www.elestetik.ru.
+        p Под обработкой персональных данных понимается любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, обезличивание, блокирование, удаление, уничтожение персональных данных.
+        p Я подтверждаю, что настоящее Согласие дано мною без ограничения срока действия и может быть отозвано в соответствии с Положением об обработке персональных данных путем направления электронного уведомления по адресу: PD@elestetik.ru
+        div.callback__done-center
+          //-a.callback__done-apply.btn(type="button", data-bs-dismiss="modal", aria-label="Close") Принять
+          a.callback__done-apply.btn(type="button", data-bs-target="#exampleModalTwo" data-bs-toggle="modal") Принять

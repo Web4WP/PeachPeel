@@ -1,0 +1,33 @@
+extends ../common/layout
+
+block main
+  main.practice-main
+    include ../includes/practice/practice-banner
+    include ../includes/practice/request
+    include ../includes/practice/solution
+    include ../includes/practice/protocol
+    include ../includes/formula/say
+    section.old
+      div.container
+        div.old__wrap
+          div.old__col
+            h2.old__title Против “Усталого типа старения”
+            div.old__text Зарядите клетки энергией с PEACH PEEL
+            div.old__nav
+              button.old__nav-btn.old__nav-btn_prev
+              button.old__nav-btn.old__nav-btn_next
+          div.old__slider.swiper
+            div.old__slider-wrap.swiper-wrapper
+              div.old__slider-item.old__slider-item_video.swiper-slide
+                img.old__slider-item-img(src="img/content/old-1.jpg", alt="")
+                button.old__slider-item-play
+              div.old__slider-item.swiper-slide
+                img.old__slider-item-img(src="img/content/old-2.jpg", alt="")
+              div.old__slider-item.swiper-slide
+                img.old__slider-item-img(src="img/content/old-3.jpg", alt="")
+              div.old__slider-item.swiper-slide
+                img.old__slider-item-img(src="img/content/old-1.jpg", alt="")
+              div.old__slider-item.swiper-slide
+                img.old__slider-item-img(src="img/content/old-2.jpg", alt="")
+      div.old__signature Исследование Академии Advanced Professional
+    include ../reuse/cta

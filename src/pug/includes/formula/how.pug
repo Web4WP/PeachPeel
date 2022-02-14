@@ -1,0 +1,28 @@
+section.how
+  div.container
+    div.how__trend Экология - <span>это тренд!</span><br>Химический пилинг Peach Peel - <span>это модно!</span>
+    div.how__wrap
+      div.how__col-left
+        h2.how__title Как это работает?
+        p.how__text Новый тип транспортной доставки - 2 типа энхазеров для увлажнения кожи без иглы и обновления кожи без реабилитации
+        div.how__photo.how__photo_mob
+          img.how__photo-img(src="img/svg/how.svg", alt="Новый тип доставки")
+        ul.how__list
+          li.how__item Ревитализирует кожу, стимулирует синтез фибробластов
+          li.how__item Обладает антибактериальным эффектом
+          li.how__item Защищает от обезвоживания и активной эксфолиации
+        div#how-accordion.how__accordion.accordion.accordion-flush
+          div.how__accordion-item.accordion-item
+            div#how-accordion-one.how__accordion-header.accordion-header
+              button.how__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#how-content-one", aria-expanded="false", aria-controls="how-content-one") Энхазер №1
+            div#how-content-one.how__accordion-collapse.accordion-collapse.collapse(aria-labelledby="how-accordion-one", data-bs-parent="#how-accordion")
+              div.how__accordion-body.accordion-body
+                p.how__accordion-text 1) <strong>Восстанавливает</strong> экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+          div.how__accordion-item.accordion-item
+            div#how-accordion-two.how__accordion-header.accordion-header
+              button.how__accordion-btn.accordion-button.collapsed(data-bs-toggle="collapse", data-bs-target="#how-content-two", aria-expanded="false", aria-controls="how-content-two") Энхазер №2
+            div#how-content-two.how__accordion-collapse.accordion-collapse.collapse(aria-labelledby="how-accordion-two", data-bs-parent="#how-accordion")
+              div.how__accordion-body.accordion-body
+                p.how__accordion-text 1) <strong>Восстанавливает</strong> экосистему кожи, стимулируя выработку собственной гиалуроновой кислоты.
+      div.how__photo
+        img.how__photo-img(src="img/svg/how.svg", alt="Новый тип доставки")
